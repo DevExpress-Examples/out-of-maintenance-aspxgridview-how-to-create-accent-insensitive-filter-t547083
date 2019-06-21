@@ -8,6 +8,9 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxGridView - How to create Accent Insensitive filter
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t547083/)**
+<!-- run online end -->
 
 
 This example demonstrates how to create a <a href="https://documentation.devexpress.com/eXpressAppFramework/113480/Concepts/Filtering/Custom-Function-Criteria-Operators">custom function criteria operator</a> that removes all diacritic symbols from the specified string value. <br>Using the <a href="https://www.devexpress.com/Support/Center/Question/Details/T320172/the-base-implementation-of-the-iclientcriteriavisitor-interface-for-the-criteriaoperator">CriteriaPatchBase's</a> class descendant expand filtering capabilities and play more complicated scenarios. The simple implementation of this class (<strong>CriteriaVisitor</strong>) is presented in this example.<br>The <a href="https://documentation.devexpress.com/#AspNet/DevExpressWebASPxGridBase_SubstituteFiltertopic">ASPxGridView.SubstituteFilter</a> event handler is used to apply accent insensitive filter.<br><br><strong>HOW TO APPLY:<br></strong>1. Add all 3 files from the App_Code folder: <em>CriteriaPatcherBase.cs</em>, <em>CriteriaVisitor.cs, </em>RemoveDiacriticsFunction.cs;<br>2. Register the custom function criteria operator when the Page's Init event is raised in the following manner:<br>
